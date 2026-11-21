@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacy Policy — FlashBox</title>
+<meta name="description" content="Privacy policy for FlashBox, the spoken flashcard app: what is stored, what happens to your voice, which permissions are used and how to delete your account.">
+<meta name="author" content="Marko Nonninger">
+<link rel="canonical" href="https://markono-code.github.io/FlashBox-Docs/privacy-policy.html">
+<link rel="alternate" hreflang="en" href="https://markono-code.github.io/FlashBox-Docs/privacy-policy.html">
+<link rel="alternate" hreflang="de" href="https://markono-code.github.io/FlashBox-Docs/datenschutzerklaerung.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://markono-code.github.io/FlashBox-Docs/privacy-policy.html">
+<meta property="og:title" content="Privacy Policy — FlashBox">
+<meta property="og:description" content="Privacy policy for FlashBox, the spoken flashcard app: what is stored, what happens to your voice, which permissions are used and how to delete your account.">
+
+<meta name="theme-color" content="#fafaff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161826" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/docs.css">
+
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("markono.theme");
+      if (t === "light" || t === "dark" || t === "auto") {
+        document.documentElement.setAttribute("data-theme", t);
+      }
+    } catch (e) { /* private mode — the "auto" default in the markup stands */ }
+  })();
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+
+    <a class="brand" href="./" aria-label="FlashBox documentation — home">
+      <img class="brand__logo" src="assets/img/flashbox-icon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="brand__text">FlashBox</span>
+        <span class="brand__sub">Legal &amp; Privacy</span>
+      </span>
+    </a>
+
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a class="lang-switch__btn" href="privacy-policy.html" hreflang="en" aria-current="true">EN</a>
+        <a class="lang-switch__btn" href="datenschutzerklaerung.html" hreflang="de">DE</a>
+      </div>
+
+      <button type="button" class="icon-btn" id="themeToggle"
+              aria-label="Colour theme: automatic" title="Colour theme: automatic">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M5.1 5.1l1.7 1.7M17.2 17.2l1.7 1.7M18.9 5.1l-1.7 1.7M6.8 17.2l-1.7 1.7"/>
+        </svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.5 14.8A8.6 8.6 0 0 1 9.2 3.5a8.6 8.6 0 1 0 11.3 11.3z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="doc-hero doc-hero--doc">
+    <div class="shell doc-hero__inner">
+      <a class="backlink" href="./">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M19 12H6M11.5 5.5 5 12l6.5 6.5"/>
+        </svg>
+        Back to documentation
+      </a>
+
+      <p class="kicker kicker--onDark">Privacy</p>
+      <h1>Privacy Policy</h1>
+      <p class="doc-hero__lead">
+        FlashBox — a language-learning app for Android and iOS in which you answer flashcards by speaking. This policy describes what the app stores, what happens to your voice, and what you can do about it.
+      </p>
+
+      <div class="doc-meta">
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Last updated</span>
+          <span class="doc-meta__val"><time datetime="2026-11-21">21 November 2026</time></span>
+        </span>
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Applies to</span>
+          <span class="doc-meta__val">Android &amp; iOS</span>
+        </span>
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Language</span>
+          <span class="doc-meta__val">English · <a href="datenschutzerklaerung.html" hreflang="de">Deutsch</a></span>
+        </span>
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Contact</span>
+          <span class="doc-meta__val"><a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a></span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell doc-layout">
+
+    <aside class="toc" aria-labelledby="toc-title">
+      <p class="toc__title" id="toc-title">Contents</p>
+      <nav class="toc__list">
+        <a class="toc__link" href="#controller"><span class="toc__num">01</span>Data controller</a>
+        <a class="toc__link" href="#collected"><span class="toc__num">02</span>What data we collect</a>
+        <a class="toc__link" href="#speech"><span class="toc__num">03</span>Your voice</a>
+        <a class="toc__link" href="#permissions"><span class="toc__num">04</span>App permissions</a>
+        <a class="toc__link" href="#usage"><span class="toc__num">05</span>How we use your data</a>
+        <a class="toc__link" href="#providers"><span class="toc__num">06</span>Service providers</a>
+        <a class="toc__link" href="#retention"><span class="toc__num">07</span>How long we keep it</a>
+        <a class="toc__link" href="#security"><span class="toc__num">08</span>Data security</a>
+        <a class="toc__link" href="#rights"><span class="toc__num">09</span>Your rights</a>
+        <a class="toc__link" href="#deletion"><span class="toc__num">10</span>Account and data deletion</a>
+        <a class="toc__link" href="#changes"><span class="toc__num">11</span>Changes to this policy</a>
+        <a class="toc__link" href="#contact"><span class="toc__num">12</span>Contact</a>
+      </nav>
+    </aside>
+
+    <article class="legal">
+
+      <div class="callout">
+        <span class="callout__label">Summary</span>
+        <p>
+          FlashBox stores your account, the decks and cards you create, and your
+          learning progress. What you say is turned into text to grade your
+          answer; the recording itself is never stored and never reaches our
+          servers. There are no ads and no analytics, and we do not sell data.
+        </p>
+      </div>
+
+      <h2 id="controller"><span class="legal__num">01</span>Data controller</h2>
+      <div class="panel">
+        <p>
+          <strong>Marko Nonninger</strong><br>
+          Developer of the FlashBox app<br>
+          Winterthur, Switzerland
+        </p>
+        <p><strong>Contact:</strong> <a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a></p>
+      </div>
+
+      <h2 id="collected"><span class="legal__num">02</span>What data we collect</h2>
+      <h3>Account</h3>
+      <ul>
+        <li><strong>Guest account:</strong> you can start without signing up. The app then creates an account with no email address and no password; it is identified by a random id only.</li>
+        <li><strong>Email account:</strong> if you sign up, your email address and a password. The password is stored only as a salted hash by our backend provider; we cannot read it.</li>
+        <li><strong>Profile:</strong> the display name you choose, the language you know, and your settings in the app (for example hands-free mode and the colour of each language).</li>
+      </ul>
+
+      <h3>Content you create</h3>
+      <ul>
+        <li><strong>Decks and cards:</strong> the words, phrases, readings and example sentences you type or import. They are private to your account.</li>
+      </ul>
+
+      <h3>Learning progress</h3>
+      <ul>
+        <li><strong>Review state:</strong> for each card you have practised, its box, its next due date and your score per exercise.</li>
+        <li><strong>Session history:</strong> when you practised, which cards were asked, whether each answer was right, how long you took, and <strong>the text the speech recognizer heard</strong> for each spoken answer.</li>
+      </ul>
+
+      <h3>Technical data</h3>
+      <ul>
+        <li><strong>Crash reports:</strong> if the app crashes, a report with the stack trace, device model, operating system version, app version and a random installation id. It contains no account id, no email address and nothing you said or typed.</li>
+        <li><strong>Server logs:</strong> like any online service, our backend provider logs requests, including IP address and time, for security and troubleshooting.</li>
+      </ul>
+
+      <p>FlashBox does not collect your location, your contacts, your photos or an advertising id, and it contains no advertising or analytics software.</p>
+
+      <h2 id="speech"><span class="legal__num">03</span>Your voice</h2>
+      <p>Speaking is how you answer in FlashBox, so this is the part worth reading.</p>
+      <ul>
+        <li><strong>Recognition is done by your device's speech service</strong> — on Android the speech recognition service installed on the phone (usually Google's), on iOS Apple's. Depending on the language and your device settings, the audio is processed on the device or sent to that provider to be transcribed. Their privacy policies apply to that step.</li>
+        <li><strong>FlashBox receives only the transcribed text.</strong> The text is compared with the card's answer and stored in your session history, so the app can show what was heard.</li>
+        <li><strong>No recording is stored or uploaded by FlashBox.</strong> If you switch on "Hear yourself", your last answer is kept in memory to play it back to you once and is then discarded. It never leaves the device through us.</li>
+        <li><strong>The microphone is open only during a practice session</strong> and only while the session screen shows it as open.</li>
+        <li><strong>Reading aloud</strong> — the voice that reads a card's answer — is your device's own text-to-speech voice.</li>
+      </ul>
+
+      <h2 id="permissions"><span class="legal__num">04</span>App permissions</h2>
+      <div class="perm-grid">
+        <div class="perm-card">
+          <div class="perm-card__head">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.2a3 3 0 0 0-3 3v5.6a3 3 0 0 0 6 0V6.2a3 3 0 0 0-3-3z"/><path d="M5.8 11.4a6.2 6.2 0 0 0 12.4 0M12 17.6v3.2"/></svg>
+            <h3>Microphone</h3>
+          </div>
+          <p><span class="perm-card__key">Purpose</span> Hearing your spoken answers during a practice session. On iOS the system asks separately for speech recognition, for the same purpose.</p>
+          <p><span class="perm-card__key">Usage</span> Only while a practice session is open. You can practise without it only in exercises that do not need speech.</p>
+        </div>
+
+        <div class="perm-card">
+          <div class="perm-card__head">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.2 2.4 3.4 5.4 3.4 8.6s-1.2 6.2-3.4 8.6c-2.2-2.4-3.4-5.4-3.4-8.6S9.8 5.8 12 3.4z"/></svg>
+            <h3>Internet</h3>
+          </div>
+          <p><span class="perm-card__key">Purpose</span> Signing in, loading your decks, saving your progress, and the speech service's own connection.</p>
+          <p><span class="perm-card__key">Usage</span> FlashBox keeps no offline copy of your decks; it needs a connection to work.</p>
+        </div>
+      </div>
+
+      <h2 id="usage"><span class="legal__num">05</span>How we use your data</h2>
+      <ul>
+        <li><strong>Running the app:</strong> showing your decks, grading your answers and scheduling each card's next review.</li>
+        <li><strong>Your statistics:</strong> the charts and figures you see in the app are computed from your own session history.</li>
+        <li><strong>Account mail:</strong> confirming your email address, and changing it or your password when you ask.</li>
+        <li><strong>Fixing faults:</strong> crash reports tell us where the app failed.</li>
+        <li><strong>Improving how answers are judged:</strong> we may look at how close heard texts were to the expected answers, in aggregate, to tune the point at which an answer counts as right.</li>
+      </ul>
+      <p>We use your data for nothing else: no advertising, no profiling, no sale.</p>
+      <p>
+        The legal bases under the GDPR are the performance of our contract with
+        you (Art. 6(1)(b)) for running the app and your account, and our
+        legitimate interest (Art. 6(1)(f)) in a stable and secure app for crash
+        reports and server logs.
+      </p>
+
+      <h2 id="providers"><span class="legal__num">06</span>Service providers</h2>
+      <p><strong>We do not sell your data.</strong> It is processed by these providers, and only to run the app:</p>
+      <ul>
+        <li><strong>Supabase</strong> — database and sign-in. Your account, decks, cards and progress are stored in the European Union (Ireland).</li>
+        <li><strong>Resend</strong> — delivery of account emails (confirmation, password and email changes). Receives your email address and the message.</li>
+        <li><strong>Google Firebase Crashlytics</strong> — crash reports, as described above.</li>
+        <li><strong>Google or Apple speech services</strong> — transcription of your spoken answers, as part of your device's operating system.</li>
+        <li><strong>Google Fonts (Android)</strong> — the fonts for Japanese and Thai text are fetched through Google Play services on first use.</li>
+      </ul>
+      <p>Data is also disclosed where the law requires it.</p>
+
+      <div class="panel">
+        <span class="panel__label">Note on transfers</span>
+        <p>
+          Your learning data is stored in the EU. Resend, Google and Apple may
+          process data outside Switzerland, the EEA and the United Kingdom,
+          including in the United States. Such transfers are made under the
+          providers' data processing terms and the safeguards they contain
+          (standard contractual clauses or an adequacy decision).
+        </p>
+      </div>
+
+      <h2 id="retention"><span class="legal__num">07</span>How long we keep it</h2>
+      <ul>
+        <li><strong>Account, decks, cards and progress:</strong> until you delete them or your account.</li>
+        <li><strong>Guest accounts:</strong> the same. A guest account you no longer use stays stored until you delete it in the app or ask us to; we may remove guest accounts that were never used for practice.</li>
+        <li><strong>Crash reports:</strong> 90 days, the period set by the provider.</li>
+        <li><strong>Server logs:</strong> for the short period our backend provider keeps them.</li>
+      </ul>
+
+      <h2 id="security"><span class="legal__num">08</span>Data security</h2>
+      <ul>
+        <li>Encrypted transmission (HTTPS/TLS)</li>
+        <li>Row Level Security in the database: every request is limited to the rows of the signed-in account</li>
+        <li>Your sign-in session is stored encrypted on the device and excluded from device backups</li>
+        <li>No payment data is collected</li>
+      </ul>
+
+      <h2 id="rights"><span class="legal__num">09</span>Your rights</h2>
+      <p>This policy is written to comply with:</p>
+      <ul>
+        <li>The Swiss Federal Act on Data Protection (FADP)</li>
+        <li>The General Data Protection Regulation (GDPR) for users in the EU and EEA</li>
+        <li>The UK GDPR and the Data Protection Act 2018 for users in the United Kingdom</li>
+        <li>Google Play and Apple App Store requirements</li>
+      </ul>
+      <p>You have the following rights regarding your data:</p>
+      <ul>
+        <li><strong>Access:</strong> information about the data stored about you</li>
+        <li><strong>Rectification:</strong> correction of incorrect data — most of it you can change in the app yourself</li>
+        <li><strong>Erasure:</strong> deletion of your data</li>
+        <li><strong>Data portability:</strong> your cards can be exported from the app (deck menu, "Export cards"); for anything else, write to us</li>
+        <li><strong>Objection and restriction:</strong> objecting to, or limiting, the processing of your data</li>
+        <li>
+          <strong>Complaint:</strong> lodging a complaint with a supervisory
+          authority &mdash; Switzerland: Federal Data Protection and Information
+          Commissioner (FDPIC/EDÖB,
+          <a href="https://www.edoeb.admin.ch/" rel="noopener">edoeb.admin.ch</a>);
+          EU/EEA: your local supervisory authority; UK: Information
+          Commissioner's Office
+          (<a href="https://ico.org.uk/" rel="noopener">ico.org.uk</a>)
+        </li>
+      </ul>
+      <p>To exercise any of these rights, write to <a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a>.</p>
+
+      <h2 id="deletion"><span class="legal__num">10</span>Account and data deletion</h2>
+      <div class="callout">
+        <p><strong>You can delete your account and all data that belongs to it at any time.</strong></p>
+      </div>
+      <ul>
+        <li><strong>In the app:</strong> <strong>Profile &rarr; Delete account</strong>, then confirm. This also works for a guest account.</li>
+        <li><strong>By email:</strong> if you can no longer open the app, write to <a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a> from the address of your account.</li>
+      </ul>
+      <p>Deleted with the account: your sign-in, profile, decks and cards, review state and session history. See the <a href="delete-account/">account deletion page</a> for details.</p>
+
+      <div class="panel panel--warn">
+        <span class="panel__label">Important notice</span>
+        <p>Deletion takes effect immediately and cannot be undone. There is no grace period.</p>
+      </div>
+
+      <h2 id="changes"><span class="legal__num">11</span>Changes to this policy</h2>
+      <p>
+        We may update this policy, for example when the app gains a feature.
+        The current version is always on this page, with the date of the last
+        change at the top.
+      </p>
+
+      <h2 id="contact"><span class="legal__num">12</span>Contact</h2>
+      <div class="panel">
+        <p>For questions about this policy, your data or a deletion request:</p>
+        <ul>
+          <li>Email: <a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a></li>
+        </ul>
+        <p><strong>For account deletions:</strong> please write from the email address of your account, so we can identify it.</p>
+      </div>
+
+      <p class="legal__foot">
+        &copy; 2026 FlashBox by Marko Nonninger.<br>
+        Last updated: <time datetime="2026-11-21">21 November 2026</time>
+      </p>
+
+    </article>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <div class="site-footer__brand">
+      <span class="brand__text">FlashBox</span>
+      <span class="site-footer__tagline">Say it out loud</span>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Documents">
+      <a href="./">Overview</a>
+      <a href="datenschutzerklaerung.html" lang="de">Datenschutzerklärung</a>
+      <a href="delete-account/">Delete account</a>
+      <a href="https://markono.dev/" rel="noopener">markono.dev</a>
+    </nav>
+
+    <div class="site-footer__meta">
+      <span>&copy; <span id="year">2026</span> Marko Nonninger. All rights reserved.</span>
+      <span class="site-footer__built">Hand-built. No tracking, no cookies.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/docs.js"></script>
+</body>
+</html>
