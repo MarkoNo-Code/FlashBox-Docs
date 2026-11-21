@@ -97,9 +97,9 @@
       <p class="kicker">Documents</p>
       <h2 style="font-size: clamp(1.4rem, 3vw, 1.9rem);">Choose a document</h2>
       <p style="color: var(--muted); max-width: 40rem; margin-top: .6rem;">
-        The privacy policy exists in English and German. Both say the same thing —
-        pick whichever you read more comfortably.
-        <span lang="de">Die Datenschutzerklärung gibt es auf Deutsch und Englisch.</span>
+        The privacy policy and the terms of use exist in English and German. Both
+        versions say the same thing — pick whichever you read more comfortably.
+        <span lang="de">Datenschutzerklärung und Nutzungsbedingungen gibt es auf Deutsch und Englisch.</span>
       </p>
 
       <div class="doc-cards">
@@ -126,6 +126,48 @@
           </p>
           <span class="doc-card__go">
             Erklärung lesen
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5"/>
+            </svg>
+          </span>
+        </a>
+
+        <a class="doc-card" href="terms.html" hreflang="en">
+          <span class="doc-card__lang">English</span>
+          <h3 class="doc-card__title">Terms of Use</h3>
+          <p class="doc-card__text">
+            The rules for using FlashBox: your account, your content, the catalogue, and what we are and are not liable for.
+          </p>
+          <span class="doc-card__go">
+            Read the terms
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5"/>
+            </svg>
+          </span>
+        </a>
+
+        <a class="doc-card" href="nutzungsbedingungen.html" hreflang="de" lang="de">
+          <span class="doc-card__lang">Deutsch</span>
+          <h3 class="doc-card__title">Nutzungsbedingungen</h3>
+          <p class="doc-card__text">
+            Die Regeln für die Nutzung von FlashBox: Ihr Konto, Ihre Inhalte, der Katalog und wofür wir haften.
+          </p>
+          <span class="doc-card__go">
+            Bedingungen lesen
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5"/>
+            </svg>
+          </span>
+        </a>
+
+        <a class="doc-card" href="licenses.html" hreflang="en">
+          <span class="doc-card__lang">English</span>
+          <h3 class="doc-card__title">Licences</h3>
+          <p class="doc-card__text">
+            The open-source libraries, fonts and icons FlashBox is built with, and their licences.
+          </p>
+          <span class="doc-card__go">
+            See the list
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5"/>
             </svg>
@@ -161,7 +203,9 @@
 
     <nav class="site-footer__links" aria-label="Documents">
       <a href="./">Overview</a>
-      <a href="datenschutzerklaerung.html" lang="de">Datenschutzerklärung</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="licenses.html">Licences</a>
       <a href="delete-account/">Delete account</a>
       <a href="https://markono.dev/" rel="noopener">markono.dev</a>
     </nav>
