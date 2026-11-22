@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Regeln für Lehrkräfte — FlashBox</title>
+<meta name="description" content="Was verifizierte Lehrkräfte auf FlashBox veröffentlichen dürfen, was Veröffentlichen bedeutet und wie Meldungen und Sperrungen funktionieren.">
+<meta name="author" content="Marko Nonninger">
+<link rel="canonical" href="https://markono-code.github.io/FlashBox-Docs/regeln-fuer-lehrkraefte.html">
+<link rel="alternate" hreflang="en" href="https://markono-code.github.io/FlashBox-Docs/teacher-rules.html">
+<link rel="alternate" hreflang="de" href="https://markono-code.github.io/FlashBox-Docs/regeln-fuer-lehrkraefte.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://markono-code.github.io/FlashBox-Docs/regeln-fuer-lehrkraefte.html">
+<meta property="og:title" content="Regeln für Lehrkräfte — FlashBox">
+<meta property="og:description" content="Was verifizierte Lehrkräfte auf FlashBox veröffentlichen dürfen, was Veröffentlichen bedeutet und wie Meldungen und Sperrungen funktionieren.">
+
+<meta name="theme-color" content="#fafaff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161826" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/docs.css">
+
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("markono.theme");
+      if (t === "light" || t === "dark" || t === "auto") {
+        document.documentElement.setAttribute("data-theme", t);
+      }
+    } catch (e) { /* private mode — the "auto" default in the markup stands */ }
+  })();
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+
+    <a class="brand" href="./" aria-label="FlashBox Dokumentation — Startseite">
+      <img class="brand__logo" src="assets/img/flashbox-icon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="brand__text">FlashBox</span>
+        <span class="brand__sub">Rechtliches &amp; Datenschutz</span>
+      </span>
+    </a>
+
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a class="lang-switch__btn" href="teacher-rules.html" hreflang="en">EN</a>
+        <a class="lang-switch__btn" href="regeln-fuer-lehrkraefte.html" hreflang="de" aria-current="true">DE</a>
+      </div>
+
+      <button type="button" class="icon-btn" id="themeToggle"
+              aria-label="Farbschema: automatisch" title="Farbschema: automatisch">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M5.1 5.1l1.7 1.7M17.2 17.2l1.7 1.7M18.9 5.1l-1.7 1.7M6.8 17.2l-1.7 1.7"/>
+        </svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.5 14.8A8.6 8.6 0 0 1 9.2 3.5a8.6 8.6 0 1 0 11.3 11.3z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="doc-hero doc-hero--doc">
+    <div class="shell doc-hero__inner">
+      <a class="backlink" href="./">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M19 12H6M11.5 5.5 5 12l6.5 6.5"/>
+        </svg>
+        Zurück zur Dokumentation
+      </a>
+
+      <p class="kicker kicker--onDark">Lehrkräfte</p>
+      <h1>Regeln für Lehrkräfte</h1>
+      <p class="doc-hero__lead">
+        Was Sie als verifizierte Lehrkraft veröffentlichen dürfen, und was geschieht, wenn etwas schiefgeht.
+      </p>
+
+      <div class="doc-meta">
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Zuletzt aktualisiert</span>
+          <span class="doc-meta__val"><time datetime="2026-11-22">22. November 2026</time></span>
+        </span>
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Gilt für</span>
+          <span class="doc-meta__val">Android &amp; iOS</span>
+        </span>
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Sprache</span>
+          <span class="doc-meta__val"><a href="teacher-rules.html" hreflang="en">English</a> · Deutsch</span>
+        </span>
+        <span class="doc-meta__item">
+          <span class="doc-meta__key">Kontakt</span>
+          <span class="doc-meta__val"><a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a></span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell doc-layout">
+
+    <aside class="toc" aria-labelledby="toc-title">
+      <p class="toc__title" id="toc-title">Inhalt</p>
+      <nav class="toc__list">
+        <a class="toc__link" href="#who"><span class="toc__num">01</span>Wer veröffentlichen kann</a>
+        <a class="toc__link" href="#allowed"><span class="toc__num">02</span>Was Sie veröffentlichen dürfen</a>
+        <a class="toc__link" href="#not-allowed"><span class="toc__num">03</span>Was Sie nicht veröffentlichen dürfen</a>
+        <a class="toc__link" href="#publishing"><span class="toc__num">04</span>Was Veröffentlichen bedeutet</a>
+        <a class="toc__link" href="#rights"><span class="toc__num">05</span>Ihre Rechte an dem, was Sie veröffentlichen</a>
+        <a class="toc__link" href="#reports"><span class="toc__num">06</span>Meldungen und Sperrungen</a>
+        <a class="toc__link" href="#contact"><span class="toc__num">07</span>Kontakt</a>
+      </nav>
+    </aside>
+
+    <article class="legal">
+
+      <div class="callout">
+        <span class="callout__label">Kurzfassung</span>
+        <p>
+          Veröffentlichen Sie nur, was Sie selbst geschrieben haben oder teilen dürfen, halten Sie es richtig und anständig, und denken Sie daran, dass es ab dem Veröffentlichen öffentlich ist. Lernende können einen Stapel melden; verstösst einer gegen diese Regeln, nehmen wir ihn vom Netz und sagen Ihnen in eigenen Worten, warum.
+        </p>
+      </div>
+
+      <h2 id="who"><span class="legal__num">01</span>Wer veröffentlichen kann</h2>
+      <ul>
+        <li>Nur verifizierte Lehrkräfte können Stapel veröffentlichen. Wir verifizieren eine Person, nicht einen Stapel: Wir laden Sie ein und bestätigen einmal, wer Sie sind. In der App kann man sich nicht bewerben; schreiben Sie uns.</li>
+        <li>Sie brauchen einen Benutzernamen (Profil &rarr; Benutzername). Ihre Stapel erscheinen unter diesem Namen.</li>
+        <li>Wir prüfen einen Stapel nicht, bevor er öffentlich wird. Für das, was Sie veröffentlichen, sind Sie verantwortlich.</li>
+      </ul>
+
+      <h2 id="allowed"><span class="legal__num">02</span>Was Sie veröffentlichen dürfen</h2>
+      <ul>
+        <li><strong>Ihre eigene Arbeit oder Arbeit, die Sie teilen dürfen.</strong> Kopieren Sie keine Wortlisten, Sätze, Aufnahmen oder Übungen aus Büchern, Kursen oder anderen Apps, es sei denn, deren Lizenz erlaubt es. Kurze Zitate sind kein Freibrief für ein ganzes Kapitel.</li>
+        <li><strong>Richtiges Material.</strong> Fehler passieren; beheben Sie sie, wenn eine Lernende oder ein Lernender Sie darauf hinweist. Veröffentlichen Sie nichts, von dem Sie wissen, dass es falsch ist.</li>
+        <li><strong>Sprachenlernen.</strong> Stapel sind zum Lernen einer Sprache da. Keine Werbung, keine Links zum Verkauf von etwas, kein Spam.</li>
+      </ul>
+
+      <h2 id="not-allowed"><span class="legal__num">03</span>Was Sie nicht veröffentlichen dürfen</h2>
+      <ul>
+        <li>Rechtswidriges, oder was Urheber-, Marken- oder andere Rechte Dritter verletzt</li>
+        <li>Hass, Belästigung, Drohungen oder Inhalte, die Menschen für das herabsetzen, was sie sind</li>
+        <li>sexuelle Inhalte, drastische Gewalt oder was für Lernende jeden Alters ungeeignet ist</li>
+        <li>Personendaten anderer - Namen, Adressen, Telefonnummern, Fotos von Privatpersonen</li>
+        <li>Inhalte, die Lernende täuschen oder ihre Daten sammeln sollen</li>
+      </ul>
+
+      <h2 id="publishing"><span class="legal__num">04</span>Was Veröffentlichen bedeutet</h2>
+      <ul>
+        <li><strong>Sofort öffentlich.</strong> Ein veröffentlichter Stapel ist ab dem Moment des Veröffentlichens in der Suche und auf Ihrer Lehrkraft-Seite unter Ihrem Benutzernamen zu finden.</li>
+        <li><strong>Spätere Änderungen bleiben privat, bis Sie sie veröffentlichen.</strong> Lernende behalten die Version, die sie haben; <em>Änderungen veröffentlichen</em> bringt ihren Stapel auf den neuen Stand, und ihr Fortschritt bleibt bei jeder Karte.</li>
+        <li><strong>Zurückziehen</strong> nimmt einen Stapel aus der Suche und von Ihrer Seite. Wer ihn schon hat, behält ihn.</li>
+        <li><strong>Ihre Lehrkraft-Seite ist öffentlich:</strong> Ihr Name, Ihr Benutzername, Ihr Bild, der Text, den Sie schreiben, und Ihre Links. Stellen Sie dort nichts ein, was Sie Fremden nicht zeigen würden.</li>
+      </ul>
+
+      <h2 id="rights"><span class="legal__num">05</span>Ihre Rechte an dem, was Sie veröffentlichen</h2>
+      <ul>
+        <li>Was Sie veröffentlichen, bleibt Ihres.</li>
+        <li>Mit dem Veröffentlichen erlauben Sie uns und den Lernenden von FlashBox - unentgeltlich, weltweit und solange der Stapel in der Bibliothek einer lernenden Person ist -, ihn in der App zu speichern, anzuzeigen und damit zu üben, und ihn mit <em>Zu meinem machen</em> für das persönliche Lernen in die eigenen Stapel zu kopieren. Diese Erlaubnis ist es, die Lernenden einen Stapel auch nach dem Zurückziehen behalten lässt.</li>
+        <li>Sie erlaubt uns nicht, Ihre Stapel zu verkaufen oder ausserhalb von FlashBox zu verwenden.</li>
+      </ul>
+
+      <h2 id="reports"><span class="legal__num">06</span>Meldungen und Sperrungen</h2>
+      <ul>
+        <li>Lernende können einen Stapel melden. Wir lesen jede Meldung. Die Lehrkraft erfährt nie, wer gemeldet hat.</li>
+        <li>Meldungen von Fehlern («falsch oder irreführend») geben wir Ihnen zum Beheben weiter. Die anderen Gründe prüfen wir selbst.</li>
+        <li>Verstösst ein Stapel gegen diese Regeln, nehmen wir ihn vom Netz: Er verschwindet sofort aus der Suche und von Ihrer Seite, und wer ihn hat, behält ihn. Unsere Begründung sehen Sie in unseren eigenen Worten am Stapel.</li>
+        <li>Sie können den Stapel überarbeiten und uns schreiben. Sobald wir die Sperrung aufheben, veröffentlichen Sie ihn neu - online geht nur die überarbeitete Version.</li>
+        <li>Verstösst eine Lehrkraft schwer oder wiederholt gegen diese Regeln, können wir die Verifizierung zurücknehmen.</li>
+      </ul>
+
+      <h2 id="contact"><span class="legal__num">07</span>Kontakt</h2>
+      <div class="panel">
+        <p>Fragen, eine Meldung oder eine Sperrung, die wir noch einmal ansehen sollen: <a href="mailto:flashbox@markono.dev">flashbox@markono.dev</a></p>
+      </div>
+
+      <p class="legal__foot">
+        &copy; 2026 FlashBox von Marko Nonninger.<br>
+        Stand: <time datetime="2026-11-22">22. November 2026</time>
+      </p>
+
+    </article>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <div class="site-footer__brand">
+      <span class="brand__text">FlashBox</span>
+      <span class="site-footer__tagline">Sprich es aus</span>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Dokumente">
+      <a href="./">Übersicht</a>
+      <a href="datenschutzerklaerung.html">Datenschutz</a>
+      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+      <a href="licenses.html" lang="en">Licences</a>
+      <a href="delete-account/">Konto löschen</a>
+      <a href="https://markono.dev/" rel="noopener">markono.dev</a>
+    </nav>
+
+    <div class="site-footer__meta">
+      <span>&copy; <span id="year">2026</span> Marko Nonninger. Alle Rechte vorbehalten.</span>
+      <span class="site-footer__built">Von Hand gebaut. Kein Tracking, keine Cookies.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/docs.js"></script>
+</body>
+</html>
