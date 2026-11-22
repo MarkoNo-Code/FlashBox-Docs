@@ -155,6 +155,7 @@
       <ul>
         <li><strong>Guest account:</strong> you can start without signing up. The app then creates an account with no email address and no password; it is identified by a random id only.</li>
         <li><strong>Email account:</strong> if you sign up, your email address and a password. The password is stored only as a salted hash by our backend provider; we cannot read it.</li>
+        <li><strong>Google or Apple account:</strong> if you sign in with Google or Apple, that provider confirms who you are and passes us an identifier, your email address and, if you share it, your name. With Apple you can hide your email address; we then receive an address at Apple's relay service, which forwards our mails to you. We receive no password.</li>
         <li><strong>Profile:</strong> the display name you choose, the language you know, and your settings in the app (for example hands-free mode and the colour of each language).</li>
       </ul>
 
@@ -238,6 +239,7 @@
       <ul>
         <li><strong>Supabase</strong> — database and sign-in. Your account, decks, cards and progress are stored in the European Union (Ireland).</li>
         <li><strong>Resend</strong> — delivery of account emails (confirmation, password and email changes). Receives your email address and the message.</li>
+        <li><strong>Google and Apple</strong> - sign-in, only if you choose it. On Android, signing in with Apple opens a page of Apple's in the browser. Their privacy policies apply to that step.</li>
         <li><strong>Google Firebase Crashlytics</strong> — crash reports, as described above.</li>
         <li><strong>Google or Apple speech services</strong> — transcription of your spoken answers, as part of your device's operating system.</li>
         <li><strong>Google Fonts (Android)</strong> — the fonts for Japanese and Thai text are fetched through Google Play services on first use.</li>
